@@ -3,9 +3,9 @@
 **Symptom:**
 
 > Invalid workflow file: .github/workflows/ci.yml#L1
-> (Line: 5, Col: 12): Unexpected value 'pull-request'
+> (Line: 9, Col: 12): Unexpected value 'pull-request'
 
-**Orsak:** pull-request är fel syntax, det ska följa yaml-trädet, [square brackets] är fel
+**Orsak:** pull-request är fel syntax, det ska vara pull_request
 **Fix:** bytte till:
 
 ```
