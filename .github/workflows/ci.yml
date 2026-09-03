@@ -20,7 +20,7 @@ jobs:
           node-version: 22
 
       - name: Installera beroenden
-        run: npm install
+        run: npm ci
 
       - name: Kör testerna
         run: npm run test:run
@@ -32,4 +32,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: dist
-          path: build
+          path: dist
