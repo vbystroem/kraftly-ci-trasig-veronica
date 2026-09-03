@@ -2,7 +2,13 @@
 # Skriven av förra tech leaden en sen kväll. "Funkar hos mig."
 name: CI
 
-on: [push, pull-requests]
+on:
+  push:
+    branches:
+      - main
+  pull-request:
+    branches:
+      - main
 
 jobs:
   verify:
