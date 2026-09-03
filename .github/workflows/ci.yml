@@ -23,7 +23,7 @@ jobs:
         run: npm install
 
       - name: Kör testerna
-        run: npm run tests
+        run: npm run test:run
 
       - name: Bygg
         run: npm run build
