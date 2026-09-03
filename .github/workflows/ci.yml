@@ -16,11 +16,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
-        with:
-          node-version: 24
+      - uses: node24
 
       - name: Installera beroenden
-        run: npm ci
+        run: npm install
 
       - name: Kör testerna
         run: npm run test:run
