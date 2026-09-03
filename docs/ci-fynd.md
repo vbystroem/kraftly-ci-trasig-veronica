@@ -44,3 +44,16 @@ Fanns inget tests script
 Hade skrivit fel, det är test eller test:run
 
 **Fix**: ändrade till test:run
+
+## Fel 4
+
+**Symptom**
+
+Warning: No files were found with the provided path: build. No artifacts will be uploaded.
+
+**Orsak**
+
+artefacten heter "dist" inte "build"
+
+**Fix**
+byt path: build till path: dist
